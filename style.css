@@ -13,3 +13,12 @@
     height: 72vh;
     width: fit-content;
 } */
+
+
+.border-line {
+    box-sizing: border-box;
+    border-top: 2px solid rgb(29, 209, 0);
+    border-radius: 88px 88px 0px 0px;
+
+    background: rgb(247, 248, 248);
+}
