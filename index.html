@@ -313,9 +313,9 @@
                         <div class="seat btn bg-[#F7F8F8] text-[#03071280]">Driver</div>
                     </div>
 
-                    <div class="flex justify-between gap-16">
+                    <div class="flex justify-around lg:justify-between gap-8 lg:gap-16">
 
-                        <div class="grid grid-cols-2 mt-4 p-4 gap-8">
+                        <div class="grid grid-cols-2 mt-4 p-4 gap-4 lg:gap-8">
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">A1</div>
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">A2</div>
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">B1</div>
@@ -338,7 +338,7 @@
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">J2</div>
                         </div>
 
-                        <div class="grid grid-cols-2 mt-4 p-4 gap-8">
+                        <div class="grid grid-cols-2 mt-4 p-4 gap-4 lg:gap-8">
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">A3</div>
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">A4</div>
                             <div class="seat btn bg-[#F7F8F8] text-[#03071280]">B3</div>
@@ -428,8 +428,11 @@
                             <div class="mt-5 mb-5">
                                 <label class="input input-bordered flex items-center gap-2">
                                     <input type="text" class="grow" placeholder="Have any coupon?" />
-                                    <!-- <span class="badge bg-[#1DD100] text-[#FFFFFF] px-7 py-5">Apply</span> -->
+                                    <span class="badge bg-[#1DD100] text-[#FFFFFF] px-7 hidden lg:block text-center py-5">Apply</span>
                                 </label>
+                                <div class="flex justify-center items-center mt-5 lg:hidden">
+                                    <button class="  px-6 py-2 bg-[#1DD100] rounded-lg">Apply</button>
+                                </div>
                             </div>
                             <div class="flex justify-between text-base font-semibold">
                                 <h3>
