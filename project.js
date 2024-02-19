@@ -26,3 +26,5 @@ function continueClick() {
     homeSection.classList.remove('hidden');
 
 }
+
+
