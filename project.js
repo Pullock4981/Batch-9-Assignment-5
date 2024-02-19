@@ -85,11 +85,11 @@ function couponCodeChecker(event) {
         isCoupon = true;
     }
 
-    if(isCoupon=== true){
+    if (isCoupon === true) {
         apply.removeAttribute('disabled');
     }
 
-    if(isCoupon=== true){
+    if (isCoupon === true) {
         smApply.removeAttribute('disabled');
     }
 
@@ -131,6 +131,7 @@ couponCode.addEventListener('change', couponCodeChecker);
 apply.addEventListener('click', applyCoupon);
 passengerName.addEventListener('change', checkPassengerName);
 phoneNumber.addEventListener('change', checkPhoneNumber);
+smApply.addEventListener('click', applyCoupon);
 
 
 for (let i = 0; i < seats.length; i++) {
