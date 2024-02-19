@@ -224,7 +224,7 @@
                                         </div>
                                     </div>
                                     <div class=" ml-10 lg:ml-40">
-                                        <p
+                                        <p id="leftSeat"
                                             class="bg-[#1DD1001A] text-[#1DD100] lg:text-xl hover:bg-[#FFFFFF] border-[#1DD100] p-4 rounded-xl">
                                             <i class="fa-solid fa-chair"></i> 40 Seats left
                                         </p>
@@ -387,7 +387,7 @@
                             <div class="bg-[#F7F8F8] py-5 px-9 rounded-xl">
                                 <div class="flex justify-between text-base font-semibold">
                                     <h3>
-                                        Seat
+                                        Seat <span id="selectSeatNumber" class="text-[#1DD100]">0</span>
                                     </h3>
                                     <h3>
                                         Class
@@ -399,28 +399,8 @@
 
                                 <hr class="h-1 w-auto mt-5 border-dashed">
 
-                                <div class="flex justify-between">
-                                    <p>
-                                        A1
-                                    </p>
-                                    <p>
-                                        Economy
-                                    </p>
-                                    <p>
-                                        550
-                                    </p>
-                                </div>
+                                <div id="seatDetails">
 
-                                <div class="flex justify-between mt-5">
-                                    <p>
-                                        A1
-                                    </p>
-                                    <p>
-                                        Economy
-                                    </p>
-                                    <p>
-                                        550
-                                    </p>
                                 </div>
 
                                 <hr class="h-1 w-auto mt-5">
@@ -429,26 +409,28 @@
                                     <h4>
                                         Total Price
                                     </h4>
-                                    <p>
-                                        BDT 1100
+                                    <p id="totalPrice">
+                                        BDT 00
                                     </p>
                                 </div>
                                 <div class="mt-5 mb-5">
                                     <label class="input input-bordered flex items-center gap-2">
-                                        <input type="text" class="grow" placeholder="Have any coupon?" />
-                                        <span
-                                            class="badge bg-[#1DD100] text-[#FFFFFF] px-7 hidden lg:flex lg:justify-center lg:items-center text-center py-5">Apply</span>
+                                        <input id="couponCode" type="text" class="grow"
+                                            placeholder="Have any coupon?" />
+                                        <button disabled id="apply"
+                                            class="btn bg-[#1DD100] text-[#FFFFFF] px-7 text-center py-2 rounded-2xl hidden lg:block">Apply</button>
                                     </label>
                                     <div class="flex justify-center items-center mt-5 lg:hidden">
-                                        <button class="px-6 py-2 bg-[#1DD100] rounded-lg">Apply</button>
+                                        <button id="smApply" class="btn px-6 py-2 bg-[#1DD100] rounded-lg"
+                                            disabled>Apply</button>
                                     </div>
                                 </div>
                                 <div class="flex justify-between text-base font-semibold">
                                     <h3>
                                         Grand Total
                                     </h3>
-                                    <p>
-                                        BDT 1100
+                                    <p id="grandPrice">
+                                        BDT 00
                                     </p>
                                 </div>
                             </div>
@@ -457,7 +439,7 @@
                                     Passenger Name*
                                 </h3>
                                 <label class="input input-bordered flex items-center gap-2 mt-5">
-                                    <input type="text" class="grow" placeholder="Enter your name" />
+                                    <input id="passengerName" type="text" class="grow" placeholder="Enter your name" />
                                 </label>
                             </div>
 
@@ -466,7 +448,8 @@
                                     Phone Number*
                                 </h3>
                                 <label class="input input-bordered flex items-center gap-2 mt-5">
-                                    <input type="text" class="grow" placeholder="Enter your phone number" />
+                                    <input id="phoneNumber" type="text" class="grow"
+                                        placeholder="Enter your phone number" />
                                 </label>
                             </div>
 
@@ -480,10 +463,11 @@
                             </div>
 
                             <div class="mt-5 flex justify-center items-center">
-                                <button onclick="nextClick()" class="btn btn-wide bg-[#1DD100]">Next</button>
+                                <button id="next" onclick="nextClick()" class="btn btn-wide bg-[#1DD100]"
+                                    disabled>Next</button>
                             </div>
 
-                            <div class="flex justify-between mt-5">
+                            <div class="flex justify-between mt-5 ">
                                 <p>
                                     Terms and Conditions
                                 </p>
