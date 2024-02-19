@@ -14,7 +14,7 @@ function nextClick() {
 
 // continue button click
 
-function continueClick(){
+function continueClick() {
     // hide success page
 
     const successSection = document.getElementById('success');
@@ -24,6 +24,5 @@ function continueClick(){
 
     const homeSection = document.getElementById('home');
     homeSection.classList.remove('hidden');
-
 
 }

@@ -84,10 +84,10 @@
 
             <!-- banner section -->
 
-            <section class="banner mr-4 ml-4 lg:mr-[10vw] lg:ml-[10vw]">
+            <section id="banner" class=" mr-4 ml-4 lg:mr-[10vw] lg:ml-[10vw]">
 
                 <div class="hero min-h-96 lg:min-h-screen rounded-xl mt-10 bg-gradient-[#03071280,
-            #03071200]" style="background-image:url(images/banner.png) ;">
+                             #03071200]" style="background-image:url(images/banner.png) ;">
                     <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                     <div class="hero-content text-center text-neutral-content">
                         <div class="">
@@ -98,8 +98,8 @@
                             <p class="mb-5 text-base lg:text-xl font-normal">Yes, you can run unit tests and view the
                                 results directly within the app. <br> The
                                 integrated testing features allow for a streamlined .</p>
-                            <button class="btn font-bold text-xl text-[#030712] bg-[#1DD100] border-0">Buy
-                                Tickets</button>
+                            <a href="#buyTicket"><button onclick="buyTicketClick()"
+                                class="btn font-bold text-xl text-[#030712] bg-[#1DD100] border-0">Buy Tickets</button></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
 
             <!-- ticket section -->
 
-            <section class="mt-20 pb-10 bg-[#F7F8F8]">
+            <section id="buyTicket" class="mt-20 pb-10 bg-[#F7F8F8]">
 
                 <hr class="border-line">
 
@@ -564,7 +564,8 @@
                     </p>
                 </div>
                 <div class="flex justify-center items-center mt-4">
-                    <button onclick="continueClick()" class="btn btn-wide bg-[#27AE60] text-[#FFFFFF] text-xl">Continue</button>
+                    <button onclick="continueClick()"
+                        class="btn btn-wide bg-[#27AE60] text-[#FFFFFF] text-xl">Continue</button>
                 </div>
             </div>
         </div>
